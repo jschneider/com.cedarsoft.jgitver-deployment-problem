@@ -40,9 +40,9 @@
     <url>https://github.com/jschneider/com.cedarsoft.jgitver-deployment-problem</url>
   </scm>
 
-  <modules>
-    <module>aModule</module>    
-  </modules>
+  <!--<modules>-->
+    <!--<module>aModule</module>    -->
+  <!--</modules>-->
 
 
   <build>
