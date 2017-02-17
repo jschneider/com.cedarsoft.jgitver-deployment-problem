@@ -12,22 +12,6 @@
   <version>0</version>
   <name>Reproduce deployment problem</name>
 
-  <scm>
-    <connection>scm:git:git://github.com/jschneider/com.cedarsoft.jgitver-deployment-problem.git</connection>
-    <developerConnection>scm:git:git@github.com:jschneider/com.cedarsoft.jgitver-deployment-problem.git</developerConnection>
-    <url>https://github.com/jschneider/com.cedarsoft.jgitver-deployment-problem</url>
-    <tag>HEAD</tag>
-  </scm>
-
-  <issueManagement>
-    <system>GitHub</system>
-    <url>https://github.com/jschneider/com.cedarsoft.jgitver-deployment-problem/issues</url>
-  </issueManagement>
-
-  <properties>
-    <java.version>1.8</java.version>
-  </properties>
-
   <modules>
     <module>aModule</module>    
     <!--<module>legacy</module>-->
