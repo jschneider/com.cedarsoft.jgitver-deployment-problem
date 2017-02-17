@@ -9,21 +9,12 @@
   <name>Reproduce deployment problem</name>
   <description>A description</description>
   <url>https://github.com/jschneider/com.cedarsoft.jgitver-deployment-problem</url>
+  <inceptionYear>2017</inceptionYear>
 
-  <scm>
-    <connection>scm:git:git://github.com/jschneider/com.cedarsoft.jgitver-deployment-problem.git</connection>
-    <developerConnection>scm:git:git@github.com:jschneider/com.cedarsoft.jgitver-deployment-problem.git</developerConnection>
-    <url>https://github.com/jschneider/com.cedarsoft.jgitver-deployment-problem</url>
-  </scm>
-
-  <distributionManagement>
-    <repository>
-      <id>sonatype-nexus-staging</id>
-      <name>OSS Sonatype Release</name>
-      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-    </repository>
-  </distributionManagement>
-
+  <organization>
+    <name>cedarsoft GmbH</name>
+    <url>https://cedarsoft.com</url>
+  </organization>
   <licenses>
     <license>
       <name>GPLv3 with Classpath Exception</name>
@@ -31,7 +22,6 @@
       <distribution>repo</distribution>
     </license>
   </licenses>
-
   <developers>
     <developer>
       <id>Johannes Schneider &lt;js@cedarsoft.com></id>
@@ -48,6 +38,55 @@
       <timezone>2</timezone>
     </developer>
   </developers>
+  <mailingLists>
+    <mailingList>
+      <name>Mail-Support</name>
+      <post>support@cedarsoft.com</post>
+    </mailingList>
+  </mailingLists>
+  <prerequisites>
+    <maven>${required.maven.version}</maven>
+  </prerequisites>
+  <scm>
+    <connection>scm:git:git://github.com/jschneider/com.cedarsoft.jgitver-deployment-problem.git</connection>
+    <developerConnection>scm:git:git@github.com:jschneider/com.cedarsoft.jgitver-deployment-problem.git</developerConnection>
+    <url>https://github.com/jschneider/com.cedarsoft.jgitver-deployment-problem</url>
+  </scm>
+  <issueManagement>
+    <system>GitHub</system>
+    <url>https://github.com/jschneider/com.cedarsoft.open/issues</url>
+  </issueManagement>
+  <distributionManagement>
+    <repository>
+      <id>sonatype-nexus-staging</id>
+      <name>OSS Sonatype Release</name>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
+    <snapshotRepository>
+      <id>sonatype-nexus-snapshots</id>
+      <name>OSS Sonatype Snapshot</name>
+      <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+    </snapshotRepository>
+    <site>
+      <id>cedarsoftWeb</id>
+      <name>cedarsoft Web</name>
+      <url>scpexe://cedarsoft.org/var/www/cedarsoft.org</url>
+    </site>
+  </distributionManagement>
+  <properties>
+    <old.jackson.version>1.9.13</old.jackson.version>
+    <jetty.version>9.4.1.v20170120</jetty.version>
+    <java.version>1.6</java.version>
+    <required.maven.version>3.3.9</required.maven.version>
+    <guice.version>4.1.0</guice.version>
+    <maven-site-plugin.skip>false</maven-site-plugin.skip>
+    <license.header.url>${project.licenses[0].url}.header</license.header.url>
+    <jaxb.version>2.3.0-b170127.1453</jaxb.version>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <jackson.version>2.8.6</jackson.version>
+    <maven.skin.version>2.0.0</maven.skin.version>
+  </properties>
 
 
   <modules>
