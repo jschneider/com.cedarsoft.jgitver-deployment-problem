@@ -14,25 +14,5 @@
 
   <modules>
     <module>aModule</module>    
-    <!--<module>legacy</module>-->
-    <!--<module>ooorg</module>-->
-    <!--<module>excel</module>-->
   </modules>
-
-  <dependencyManagement>
-  </dependencyManagement>
-
-  <dependencies>
-  </dependencies>
-
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>com.cedarsoft.maven</groupId>
-        <artifactId>instrumentation-plugin</artifactId>
-        <version>1.1</version>
-      </plugin>
-    </plugins>
-  </build>
-
 </project>
