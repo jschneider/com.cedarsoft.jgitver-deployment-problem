@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <parent>
+    <groupId>com.cedarsoft</groupId>
+    <artifactId>open</artifactId>
+    <version>75.3.4</version>
+  </parent>
+
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>jgitver-deployment-problem</artifactId>
+  <packaging>pom</packaging>
+  <version>0</version>
+  <name>Reproduce deployment problem</name>
+
+  <scm>
+    <connection>scm:git:git://github.com/jschneider/com.cedarsoft.jgitver-deployment-problem.git</connection>
+    <developerConnection>scm:git:git@github.com:jschneider/com.cedarsoft.jgitver-deployment-problem.git</developerConnection>
+    <url>https://github.com/jschneider/com.cedarsoft.jgitver-deployment-problem</url>
+    <tag>HEAD</tag>
+  </scm>
+
+  <issueManagement>
+    <system>GitHub</system>
+    <url>https://github.com/jschneider/com.cedarsoft.jgitver-deployment-problem/issues</url>
+  </issueManagement>
+
+  <properties>
+    <java.version>1.8</java.version>
+  </properties>
+
+  <modules>
+    <module>aModule</module>    
+    <!--<module>legacy</module>-->
+    <!--<module>ooorg</module>-->
+    <!--<module>excel</module>-->
+  </modules>
+
+  <dependencyManagement>
+  </dependencyManagement>
+
+  <dependencies>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>com.cedarsoft.maven</groupId>
+        <artifactId>instrumentation-plugin</artifactId>
+        <version>1.1</version>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>
