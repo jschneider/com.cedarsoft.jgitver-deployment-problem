@@ -9,7 +9,6 @@
   <name>Reproduce deployment problem</name>
   <description>A description</description>
   <url>https://github.com/jschneider/com.cedarsoft.jgitver-deployment-problem</url>
-  <inceptionYear>2017</inceptionYear>
 
   <licenses>
     <license>
@@ -20,30 +19,16 @@
   </licenses>
   <developers>
     <developer>
-      <id>Johannes Schneider &lt;js@cedarsoft.com></id>
       <name>Johannes Schneider</name>
       <email>js@cedarsoft.com</email>
-      <url>http://blog.cedarsoft.com</url>
-      <organization>cedarsoft GmbH</organization>
-      <organizationUrl>http://www.cedarsoft.com</organizationUrl>
-      <roles>
-        <role>architect</role>
-        <role>developer</role>
-        <role>admin</role>
-      </roles>
-      <timezone>2</timezone>
     </developer>
   </developers>
+
   <scm>
     <connection>scm:git:git://github.com/jschneider/com.cedarsoft.jgitver-deployment-problem.git</connection>
     <developerConnection>scm:git:git@github.com:jschneider/com.cedarsoft.jgitver-deployment-problem.git</developerConnection>
     <url>https://github.com/jschneider/com.cedarsoft.jgitver-deployment-problem</url>
   </scm>
-
-  <!--<modules>-->
-    <!--<module>aModule</module>    -->
-  <!--</modules>-->
-
 
   <build>
     <plugins>
@@ -60,10 +45,6 @@
       <plugin>
         <artifactId>maven-gpg-plugin</artifactId>
         <version>1.6</version>
-        <!--<configuration>-->
-          <!--<useAgent>true</useAgent>-->
-          <!--<keyname>7B42FE9D</keyname>-->
-        <!--</configuration>-->
         <executions>
           <execution>
             <id>sign-artifacts</id>
