@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <parent>
-    <groupId>com.cedarsoft</groupId>
-    <artifactId>open</artifactId>
-    <version>75.3.4</version>
-  </parent>
 
   <modelVersion>4.0.0</modelVersion>
+  <groupId>com.cedarsoft</groupId>
   <artifactId>jgitver-deployment-problem</artifactId>
   <packaging>pom</packaging>
   <version>0</version>
@@ -15,4 +11,56 @@
   <modules>
     <module>aModule</module>    
   </modules>
+
+  <distributionManagement>
+    <repository>
+      <id>sonatype-nexus-staging</id>
+      <name>OSS Sonatype Release</name>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
+  </distributionManagement>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.sonatype.plugins</groupId>
+        <artifactId>nexus-staging-maven-plugin</artifactId>
+        <version>1.6.7</version>
+        <extensions>true</extensions>
+        <configuration>
+          <nexusUrl>https://oss.sonatype.org</nexusUrl>
+          <serverId>sonatype-nexus-staging</serverId>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+  <profiles>
+    <profile>
+      <id>release-sign-artifacts</id>
+      <activation>
+        <property>
+          <name>performRelease</name>
+          <value>true</value>
+        </property>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <artifactId>maven-gpg-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>sign-artifacts</id>
+                <phase>verify</phase>
+                <goals>
+                  <goal>sign</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
+
 </project>
