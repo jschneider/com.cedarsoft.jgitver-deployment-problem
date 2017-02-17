@@ -12,13 +12,13 @@
     <module>aModule</module>    
   </modules>
 
-  <distributionManagement>
-    <repository>
-      <id>sonatype-nexus-staging</id>
-      <name>OSS Sonatype Release</name>
-      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-    </repository>
-  </distributionManagement>
+  <!--<distributionManagement>-->
+    <!--<repository>-->
+      <!--<id>sonatype-nexus-staging</id>-->
+      <!--<name>OSS Sonatype Release</name>-->
+      <!--<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>-->
+    <!--</repository>-->
+  <!--</distributionManagement>-->
 
   <build>
     <plugins>
