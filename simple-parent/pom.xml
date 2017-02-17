@@ -57,6 +57,14 @@
           <serverId>sonatype-nexus-staging</serverId>
         </configuration>
       </plugin>
+      <plugin>
+        <artifactId>maven-gpg-plugin</artifactId>
+        <version>1.6</version>
+        <configuration>
+          <useAgent>true</useAgent>
+          <keyname>7B42FE9D</keyname>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
 
