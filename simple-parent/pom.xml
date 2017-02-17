@@ -45,4 +45,19 @@
     <url>https://github.com/jschneider/com.cedarsoft.jgitver-deployment-problem</url>
   </scm>
 
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.sonatype.plugins</groupId>
+        <artifactId>nexus-staging-maven-plugin</artifactId>
+        <version>1.6.7</version>
+        <extensions>true</extensions>
+        <configuration>
+          <nexusUrl>https://oss.sonatype.org</nexusUrl>
+          <serverId>sonatype-nexus-staging</serverId>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
 </project>
