@@ -5,6 +5,7 @@
     <groupId>com.cedarsoft</groupId>
     <artifactId>simple-parent</artifactId>
     <version>1</version>
+    <relativePath>simple-parent</relativePath>
   </parent>
 
   <modelVersion>4.0.0</modelVersion>
