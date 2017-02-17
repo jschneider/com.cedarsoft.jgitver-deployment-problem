@@ -10,10 +10,4 @@
   <artifactId>aModule</artifactId>
   <name>A submodule</name>
 
-  <dependencyManagement>
-  </dependencyManagement>
-
-  <dependencies>
-  </dependencies>
-
 </project>
